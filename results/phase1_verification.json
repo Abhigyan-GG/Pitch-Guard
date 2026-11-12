@@ -1,0 +1,23 @@
+{
+  "data/synthetic_input.avi": {
+    "decoded_frames": 120
+  },
+  "results/demo.avi": {
+    "decoded_frames": 120
+  },
+  "results/replay/analyzed.avi": {
+    "decoded_frames": 120
+  },
+  "results/events.json": {
+    "frames": 120,
+    "alert_first_frame": 44,
+    "alert_last_frame": 79
+  },
+  "results/replay/events.json": {
+    "frames": 120,
+    "alert_first_frame": 44,
+    "alert_last_frame": 79
+  },
+  "calibration_max_residual_m": 9.421041793640072e-15,
+  "pytest": "15 passed"
+}
