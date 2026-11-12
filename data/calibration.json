@@ -1,0 +1,29 @@
+{
+  "corners": [
+    [
+      110.0,
+      70.0
+    ],
+    [
+      850.0,
+      105.0
+    ],
+    [
+      925.0,
+      550.0
+    ],
+    [
+      35.0,
+      550.0
+    ]
+  ],
+  "order": "top-left top-right bottom-right bottom-left",
+  "pitch_m": [
+    105,
+    68
+  ],
+  "image_size": [
+    960,
+    600
+  ]
+}

@@ -1,0 +1,1 @@
+"""PitchGuard synthetic marker baseline."""

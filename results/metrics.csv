@@ -1,0 +1,6 @@
+case,frames,precision,recall,mean_position_error_m,coverage,formation_accuracy_all_frames,analysis_fps
+clean,24,1.0,1.0,0.115,1.0,1.0,54.6
+dim,24,1.0,1.0,0.116,1.0,1.0,53.1
+blur,24,1.0,1.0,0.115,1.0,1.0,37.4
+occluded,24,1.0,0.8636,0.123,0.0,0.0,53.0
+same_kit,24,0.5,0.5,0.092,0.0,0.0,71.0

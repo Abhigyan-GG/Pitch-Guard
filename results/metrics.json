@@ -1,0 +1,52 @@
+[
+  {
+    "case": "clean",
+    "frames": 24,
+    "precision": 1.0,
+    "recall": 1.0,
+    "mean_position_error_m": 0.115,
+    "coverage": 1.0,
+    "formation_accuracy_all_frames": 1.0,
+    "analysis_fps": 54.6
+  },
+  {
+    "case": "dim",
+    "frames": 24,
+    "precision": 1.0,
+    "recall": 1.0,
+    "mean_position_error_m": 0.116,
+    "coverage": 1.0,
+    "formation_accuracy_all_frames": 1.0,
+    "analysis_fps": 53.1
+  },
+  {
+    "case": "blur",
+    "frames": 24,
+    "precision": 1.0,
+    "recall": 1.0,
+    "mean_position_error_m": 0.115,
+    "coverage": 1.0,
+    "formation_accuracy_all_frames": 1.0,
+    "analysis_fps": 37.4
+  },
+  {
+    "case": "occluded",
+    "frames": 24,
+    "precision": 1.0,
+    "recall": 0.8636,
+    "mean_position_error_m": 0.123,
+    "coverage": 0.0,
+    "formation_accuracy_all_frames": 0.0,
+    "analysis_fps": 53.0
+  },
+  {
+    "case": "same_kit",
+    "frames": 24,
+    "precision": 0.5,
+    "recall": 0.5,
+    "mean_position_error_m": 0.092,
+    "coverage": 0.0,
+    "formation_accuracy_all_frames": 0.0,
+    "analysis_fps": 71.0
+  }
+]

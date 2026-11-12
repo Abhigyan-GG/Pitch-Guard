@@ -1,0 +1,12 @@
+{
+  "python": "3.10.11",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "image_size": [
+    960,
+    600
+  ],
+  "timing": "detection and tactics only; excludes generation, decode, render and encoding"
+}
