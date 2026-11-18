@@ -63,7 +63,7 @@ def analyse_shape(observations, formation, direction=1, possession="unknown", th
                 if nearest>limits['isolation_m']:
                     signals.append({'kind':'support_isolation','key':f'support_isolation:{o.track_id}',
                                     'track_ids':[o.track_id],'value':round(float(nearest),2),
-                                    'threshold':limits['isolation_m'],'unit':'m'})
+                                    'threshold':limits['isolation_m'],'unit':'m','scope':'local_view'})
             return {**empty,'local_valid':True,'local_signals':signals,
                     'reason':'Partial view: only local support distances are assessed; teammates may be outside the image.'}
         return empty
@@ -75,10 +75,10 @@ def analyse_shape(observations, formation, direction=1, possession="unknown", th
     reference=reference[offset:]
     # Possession is supplied by the analyst, never inferred from shape alone.
     if possession == "in":
-        reference[:,0] += direction*5
+        reference[:,0] = np.median(reference[:,0])+(reference[:,0]-np.median(reference[:,0]))*1.08+direction*5
         reference[:,1] = 34+(reference[:,1]-34)*1.08
     elif possession == "out":
-        reference[:,0] -= direction*4
+        reference[:,0] = np.median(reference[:,0])+(reference[:,0]-np.median(reference[:,0]))*.90-direction*4
         reference[:,1] = 34+(reference[:,1]-34)*.90
     shift=np.median(points,axis=0)-np.median(reference,axis=0)
     cost=np.linalg.norm((points-shift)[:,None,:]-reference[None,:,:],axis=2)
@@ -173,6 +173,10 @@ class EventEngine:
                        "threshold":signal["threshold"],"unit":signal["unit"],
                        "evidence":"Measured spacing relative to a selected reference; intent is not known.",
                        "review":{"status":"unreviewed","notes":""},**GUIDANCE[signal["kind"]]}
+                event['scope']=signal.get('scope','team_shape')
+                if event['scope']=='local_view':
+                    event['title']='A player is far from visible teammates'
+                    event['evidence']='Local view only. Other support players may be off-screen; whole-team isolation is not established.'
                 self.events.append(event);candidate["event"]=event
             if candidate["event"] is not None:
                 event=candidate["event"];event["end_s"]=round(time_s,3)

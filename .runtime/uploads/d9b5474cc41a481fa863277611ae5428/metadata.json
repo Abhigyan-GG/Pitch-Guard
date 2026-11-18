@@ -1,0 +1,14 @@
+{
+  "id": "d9b5474cc41a481fa863277611ae5428",
+  "name": "synthetic_input.avi",
+  "path": "C:\\Users\\Hemant\\Downloads\\PYTHON\\Pitch-Guard\\data\\synthetic_input.avi",
+  "video": {
+    "width": 960,
+    "height": 600,
+    "fps": 20.0,
+    "frame_count": 120,
+    "duration_s": 6.0
+  },
+  "example": "demo",
+  "created_utc": "2026-11-18T11:44:35.886692+00:00"
+}

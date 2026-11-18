@@ -80,7 +80,7 @@
               <div class="calibration-actions"><button class="secondary" id="save-keyframe">Save these landmarks at this time</button><span id="point-count" class="small muted">0 of 4 landmarks</span></div>
               <div id="keyframe-list" class="keyframe-list"></div>
               <details><summary>Precise landmark coordinates</summary><p class="small muted">For keyboard entry, use four [x, y] pixel pairs in the same order.</p><label for="points-json">Image landmarks</label><textarea id="points-json" rows="2" placeholder="[[110,70],[850,105],[925,550],[35,550]]"></textarea><button class="tiny" id="apply-points">Apply coordinates</button></details>
-              <p class="small muted">Centre-circle calibration assumes a regulation 9.15 m radius. Add a new keyframe after zooms or cuts. Calibration is meaningful only when landmarks are correctly identified.</p>
+              <p class="small muted">Centre-circle mode is for near-vertical overhead views and assumes a 9.15 m radius. Use pitch corners for angled views. Save a new keyframe after zooms or cuts.</p>
             </div>
             <div id="job-progress" class="panel job-progress" hidden aria-live="polite"><div class="flex"><h2 id="progress-title">Analysing your clip</h2><button class="tiny" id="cancel-job">Cancel</button></div><progress id="analysis-progress" max="1" value="0"></progress><p id="job-message"></p></div>
             <div id="review-workspace" hidden>
@@ -90,6 +90,31 @@
               <div class="two-col review-viz"><div class="panel"><div class="flex"><h3>Pitch map</h3><label class="check-row small"><input type="checkbox" id="show-lanes" checked> Static lanes</label></div><div id="review-pitch"></div><p class="small muted">Mint = your team · orange = opponent · grey = reference role. Track IDs are temporary, not shirt numbers.</p></div><div class="panel"><h3>How the shape changes</h3><div id="shape-chart"></div><p class="small muted">Width and depth in metres. Missing sections mean the view could not support team measurements.</p></div></div>
               <div class="section-heading"><div><p class="eyebrow">NEXT SESSION STARTS HERE</p><h2>Moments to discuss</h2></div><label class="sr-only" for="event-filter">Filter review events</label><select id="event-filter"><option value="all">All observations</option><option value="unreviewed">Needs review</option><option value="confirmed">Confirmed</option><option value="dismissed">Dismissed</option><option value="uncertain">Uncertain</option></select></div>
               <div id="event-list"></div>
+              <section class="panel human-review" aria-labelledby="human-review-heading">
+                <p class="eyebrow">YOUR OWN OBSERVATIONS</p><h3 id="human-review-heading">What did the automatic review miss?</h3>
+                <p class="small muted">Record your own moments and the periods you reviewed, including periods with no issues. These labels are saved separately from automatic findings.</p>
+                <div class="two-col"><div><label for="label-reviewer">Reviewer name</label><input id="label-reviewer" type="text" maxlength="120" placeholder="Your name"></div><div><label for="label-role">Reviewing as</label><select id="label-role"><option value="coach">Coach</option><option value="analyst">Analyst</option><option value="player">Player</option></select></div></div>
+                <details><summary>Dataset clip identifier</summary><label for="label-clip-id">Clip ID used in your dataset manifest</label><input id="label-clip-id" type="text" maxlength="80" pattern="[A-Za-z0-9_-]+"></details>
+                <div class="two-col manual-label-columns">
+                  <form id="manual-event-form" class="label-box">
+                    <h3>Add a moment yourself</h3><label for="manual-kind">What did you observe?</label><select id="manual-kind"><option value="role_drift">Departure from the reference shape</option><option value="unit_gap">Gap between units</option><option value="defensive_gap">Open defensive channel</option><option value="stretched_shape">Stretched team</option><option value="support_isolation">Distant support</option><option value="shape_disruption">Abrupt shape change</option></select>
+                    <div class="two-col"><div><label for="manual-start">Start (seconds)</label><input id="manual-start" type="number" min="0" step=".01" required></div><div><label for="manual-end">End (seconds)</label><input id="manual-end" type="number" min=".01" step=".01" required></div></div>
+                    <button type="button" class="text-button small" id="manual-use-current">Use the selected moment as start</button>
+                    <label for="manual-judgement">Your judgement</label><select id="manual-judgement"><option value="issue">Issue to address</option><option value="intended">Intended movement</option><option value="uncertain">Uncertain — needs discussion</option></select>
+                    <label for="manual-notes">What should the team learn?</label><textarea id="manual-notes" rows="3" maxlength="3000"></textarea><button class="secondary" type="submit">Add to this review +</button>
+                  </form>
+                  <form id="reviewed-period-form" class="label-box">
+                    <h3>Mark a period you reviewed</h3><p class="small muted">Review the full period for missed issues and unflagged play. A period with no issues is useful evidence too.</p>
+                    <div class="two-col"><div><label for="period-start">From (seconds)</label><input id="period-start" type="number" min="0" step=".01" required></div><div><label for="period-end">To (seconds)</label><input id="period-end" type="number" min=".01" step=".01" required></div></div>
+                    <button type="submit" class="secondary">Add reviewed period +</button>
+                    <div id="reviewed-periods" class="label-items" aria-live="polite"></div>
+                  </form>
+                </div>
+                <div id="manual-events" class="label-items" aria-live="polite"></div>
+                <label class="check-row"><input id="labels-attested" type="checkbox"> I reviewed these periods, including unflagged play, and resolved uncertain issues within them.</label>
+                <div class="button-row"><button class="primary" id="save-human-review">Save my review</button><a class="secondary" id="export-human-labels" download hidden>Export human labels ↓</a><span class="small muted" id="human-review-status" role="status">No human labels saved yet.</span></div>
+                <p class="small muted">Only a completed coach review is labelled coach-reviewed in the export. This review has access to automatic predictions; a final independent benchmark needs separately prepared labels.</p>
+              </section>
               <div class="panel exports"><h3>Take the review with you</h3><p class="muted small">Exports include measured evidence and your saved review notes.</p><div id="export-links" class="button-row"></div></div>
             </div>
           </div>

@@ -1,0 +1,3556 @@
+{
+  "summary": {
+    "samples": 17,
+    "formation_coverage": 0.0,
+    "local_only_coverage": 1.0,
+    "camera_coverage": 1.0,
+    "events": 1,
+    "average_detections": 7.0,
+    "start_s": 0,
+    "end_s": 8.0
+  },
+  "events": [
+    {
+      "id": "event-1",
+      "kind": "support_isolation",
+      "start_s": 0.0,
+      "detected_s": 0.999,
+      "end_s": 7.995,
+      "track_ids": [
+        5
+      ],
+      "peak_value": 22.94,
+      "threshold": 22,
+      "unit": "m",
+      "evidence": "Measured spacing relative to a selected reference; intent is not known.",
+      "review": {
+        "status": "unreviewed",
+        "notes": ""
+      },
+      "title": "A player has little nearby support",
+      "coach": "Review whether this is an intended wide outlet. If not, bring a supporting teammate closer and give the receiver two options.",
+      "player": "Create an angle before the ball arrives; ask for nearby support when passing options are distant.",
+      "drill": "Play a 3v2 support game where the receiver must have two different passing angles."
+    }
+  ],
+  "timeline": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.0,
+        "movement_px": 0.0
+      },
+      "image_to_pitch": [
+        [
+          0.02969621451798143,
+          -1.8239672698956323e-08,
+          23.433865271902153
+        ],
+        [
+          -0.00037627259699232556,
+          0.03017594715992259,
+          17.40322256524487
+        ],
+        [
+          -1.1066841088009545e-05,
+          -3.4742233686820167e-10,
+          1.0
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.4520609318995,
+            960.9923835125447
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.22979736328125,
+            46.51112365722656
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.3811064879026,
+            939.4956079519186
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.465312957763672,
+            45.770912170410156
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8143459915611,
+            919.6793248945148
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.796451568603516,
+            45.25995635986328
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            522,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.44328263624841,
+            530.3948035487958
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.52597999572754,
+            33.40815353393555
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8287250384024,
+            172.23387096774192
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39352035522461,
+            22.4827938079834
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            960,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2612698412697,
+            973.6495238095238
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.533973693847656,
+            46.95453643798828
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.6955359529537,
+            438.42849505479813
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58656692504883,
+            30.600692749023438
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.92,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": []
+    },
+    {
+      "frame": 13,
+      "time_s": 0.5,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.007,
+        "movement_px": 0.01
+      },
+      "image_to_pitch": [
+        [
+          0.02969674479951188,
+          1.985654975758274e-07,
+          23.433844895180968
+        ],
+        [
+          -0.0003761467544001078,
+          0.03017637704429027,
+          17.403306907742145
+        ],
+        [
+          -1.1063139312203799e-05,
+          7.481910108154591e-09,
+          1.0000000076121387
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.668912848158,
+            960.9330637915542
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23652267456055,
+            46.50946044921875
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.38827501534684,
+            939.7602823818293
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.465566635131836,
+            45.779056549072266
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.7787234042553,
+            919.5659574468085
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79549026489258,
+            45.256622314453125
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.522382736206055,
+            33.40685272216797
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7856328392246,
+            172.33827442037247
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.3924674987793,
+            22.48615074157715
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.198076923077,
+            973.6865384615385
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53213882446289,
+            46.955745697021484
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58815002441406,
+            30.596942901611328
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.92,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": []
+    },
+    {
+      "frame": 26,
+      "time_s": 0.999,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.024,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699320923026278,
+          2.3325088756465727e-06,
+          23.432655002336336
+        ],
+        [
+          -0.00037498175168339704,
+          0.030181202287623537,
+          17.40040767158789
+        ],
+        [
+          -1.1043013516840856e-05,
+          4.6773232415273194e-08,
+          1.0000004455436908
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.235145568847656,
+            46.509010314941406
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.349139934914,
+            939.4805516813884
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.464452743530273,
+            45.77055740356445
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.796539306640625,
+            45.267425537109375
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.52187728881836,
+            33.405818939208984
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.391082763671875,
+            22.4849910736084
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.183908045977,
+            973.6455938697318
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53192901611328,
+            46.95473861694336
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58838653564453,
+            30.596084594726562
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 39,
+      "time_s": 1.499,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.025,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699374064003293,
+          2.313945672487373e-06,
+          23.432666479283107
+        ],
+        [
+          -0.00037493103298181455,
+          0.030181278327688625,
+          17.400320927036628
+        ],
+        [
+          -1.1042131286149146e-05,
+          4.6509920059907827e-08,
+          1.0000004411292822
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23516082763672,
+            46.50901794433594
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.36366450015475,
+            939.4634787991333
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.464893341064453,
+            45.77003860473633
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79655456542969,
+            45.26742935180664
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.521883010864258,
+            33.40577697753906
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.3911018371582,
+            22.484947204589844
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2212671123843,
+            973.6688952562878
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53308868408203,
+            46.955467224121094
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58840560913086,
+            30.596054077148438
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 52,
+      "time_s": 1.999,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.023,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.02969932478840833,
+          2.4265261480526896e-06,
+          23.432605264845805
+        ],
+        [
+          -0.00037499386963083523,
+          0.03018122849475705,
+          17.400435572566373
+        ],
+        [
+          -1.1043275658940438e-05,
+          4.782799625629386e-08,
+          1.0000004639903501
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23514938354492,
+            46.50901794433594
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.37794299876083,
+            939.4718091697645
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.465330123901367,
+            45.770301818847656
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.796539306640625,
+            45.267433166503906
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.52186393737793,
+            33.40584182739258
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.391056060791016,
+            22.485013961791992
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2212671123843,
+            973.6688952562878
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.5330810546875,
+            46.95545959472656
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58837127685547,
+            30.596105575561523
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 65,
+      "time_s": 2.499,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.022,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699281531086672,
+          2.408188108743289e-06,
+          23.432610675357665
+        ],
+        [
+          -0.000375026420320481,
+          0.030181157275891837,
+          17.400492652246573
+        ],
+        [
+          -1.1043801783947851e-05,
+          4.7505759593655225e-08,
+          1.000000462123622
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.235137939453125,
+            46.50901412963867
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.36342484876687,
+            939.4889095703427
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.464885711669922,
+            45.77082061767578
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79652786254883,
+            45.26742935180664
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.521862030029297,
+            33.40586471557617
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39104461669922,
+            22.48504066467285
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.183908045977,
+            973.6455938697318
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53192138671875,
+            46.954734802246094
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58835983276367,
+            30.596120834350586
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 78,
+      "time_s": 2.998,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.976,
+        "validation_error_px": 0.01,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029696725470776092,
+          -1.7539402154383344e-06,
+          23.43468658113243
+        ],
+        [
+          -0.00037554037682665294,
+          0.03017371734271979,
+          17.40423878849223
+        ],
+        [
+          -1.1051967097098007e-05,
+          -2.597381370478359e-08,
+          0.9999996934346995
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.2348747253418,
+            46.50882339477539
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.349139934914,
+            939.4805516813884
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.46422576904297,
+            45.7704963684082
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79629898071289,
+            45.267303466796875
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.522621154785156,
+            33.406986236572266
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39112091064453,
+            22.48752784729004
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.183908045977,
+            973.6455938697318
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53178787231445,
+            46.95447540283203
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58838653564453,
+            30.59739875793457
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 91,
+      "time_s": 3.498,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.025,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.02969936797384042,
+          2.3081963424096267e-06,
+          23.432666107770853
+        ],
+        [
+          -0.00037492994148366065,
+          0.03018126507508308,
+          17.40032174761653
+        ],
+        [
+          -1.1042086664695415e-05,
+          4.6218805008603683e-08,
+          1.0000004412953105
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23516082763672,
+            46.50901794433594
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.36366450015475,
+            939.4634787991333
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.464893341064453,
+            45.770042419433594
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79655456542969,
+            45.26742935180664
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.521883010864258,
+            33.40577697753906
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39109420776367,
+            22.484947204589844
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2212671123843,
+            973.6688952562878
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53308868408203,
+            46.955467224121094
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.588401794433594,
+            30.596054077148438
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 104,
+      "time_s": 3.998,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.023,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699321182241348,
+          2.419315686335409e-06,
+          23.432605721515174
+        ],
+        [
+          -0.00037499100209596525,
+          0.03018121286438762,
+          17.400438244668916
+        ],
+        [
+          -1.1043207803225835e-05,
+          4.754570545093111e-08,
+          1.000000463848485
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23514938354492,
+            46.50901794433594
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.37794299876083,
+            939.4718091697645
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.465330123901367,
+            45.770301818847656
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.796539306640625,
+            45.267433166503906
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.52186393737793,
+            33.40583801269531
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39105224609375,
+            22.485015869140625
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2212671123843,
+            973.6688952562878
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.5330810546875,
+            46.95545959472656
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.5883674621582,
+            30.596105575561523
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 117,
+      "time_s": 4.497,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.022,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699276209522736,
+          2.391658823225526e-06,
+          23.432612229674916
+        ],
+        [
+          -0.00037501858527153026,
+          0.030181121954393493,
+          17.400499859221863
+        ],
+        [
+          -1.1043635000365733e-05,
+          4.691306540784907e-08,
+          1.0000004616046116
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.6126126126125,
+            960.9139639639639
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23514175415039,
+            46.50901412963867
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.36342484876687,
+            939.4889095703427
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.464885711669922,
+            45.77082061767578
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.8023598820058,
+            919.9174041297935
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.796531677246094,
+            45.26742935180664
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.32300469483568,
+            530.3458528951486
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.521862030029297,
+            33.40586471557617
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.7327327327326,
+            172.3521021021021
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39103698730469,
+            22.485048294067383
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.183908045977,
+            973.6455938697318
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.531925201416016,
+            46.954734802246094
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            886,
+            456
+          ],
+          "footpoint": [
+            864.7407407407408,
+            438.2995169082126
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.588356018066406,
+            30.59612274169922
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 130,
+      "time_s": 4.997,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.022,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029698830878395956,
+          1.9163988643935617e-06,
+          23.432865939494423
+        ],
+        [
+          -0.0003752021254892705,
+          0.030180630193976887,
+          17.40060342051514
+        ],
+        [
+          -1.1047515372535846e-05,
+          4.0233191926637995e-08,
+          1.0000003681660037
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            774,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.5984324573535,
+            960.8307976025818
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.23460388183594,
+            46.506412506103516
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.27803030303028,
+            939.9280303030303
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.462257385253906,
+            45.78401184082031
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            847,
+            928
+          ],
+          "footpoint": [
+            838.7722473604827,
+            919.9306184012066
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.79551696777344,
+            45.26775360107422
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            520,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.194731890874884,
+            530.3085606773283
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.518095016479492,
+            33.404701232910156
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8443414445732,
+            172.23908845113942
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39445877075195,
+            22.48154640197754
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.1867679645457,
+            973.7182652738207
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53194046020508,
+            46.95689010620117
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            885,
+            456
+          ],
+          "footpoint": [
+            864.6653236637119,
+            438.2879398334676
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.586029052734375,
+            30.5956974029541
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.93,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 143,
+      "time_s": 5.497,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.024,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.02969906787776681,
+          1.878475352835626e-06,
+          23.432885196686208
+        ],
+        [
+          -0.0003750425013778065,
+          0.030180584082752482,
+          17.400657067844016
+        ],
+        [
+          -1.1044286820101272e-05,
+          3.9694407985572894e-08,
+          1.0000003610135262
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9301895515487,
+            961.0693481276005
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.24479293823242,
+            46.51375961303711
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.27189781021897,
+            939.930200729927
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.46209144592285,
+            45.78411102294922
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.80254364013672,
+            45.27135467529297
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51686668395996,
+            33.40591049194336
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8916857360792,
+            172.2425629290618
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.395992279052734,
+            22.481775283813477
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2200063311172,
+            973.7261791706236
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53302764892578,
+            46.957183837890625
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5740890688259,
+            438.28933873144393
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58332443237305,
+            30.595836639404297
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 156,
+      "time_s": 5.997,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.024,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699198127924663,
+          2.064276920708682e-06,
+          23.432802169268506
+        ],
+        [
+          -0.00037502085417035906,
+          0.0301808453566773,
+          17.40056881331582
+        ],
+        [
+          -1.1043980387792676e-05,
+          4.3441293814387665e-08,
+          1.000000391419777
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9552789303826,
+            961.0926694329183
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.245574951171875,
+            46.51447296142578
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.27189781021897,
+            939.930200729927
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.462100982666016,
+            45.78410720825195
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.80255889892578,
+            45.27135467529297
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51683807373047,
+            33.4058952331543
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8916857360792,
+            172.2425629290618
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39601135253906,
+            22.481731414794922
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2375954198474,
+            973.7395038167939
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.5335807800293,
+            46.95759201049805
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5740890688259,
+            438.28933873144393
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58333969116211,
+            30.595823287963867
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 169,
+      "time_s": 6.496,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.023,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.02969930239215217,
+          2.17750070657014e-06,
+          23.43273703610816
+        ],
+        [
+          -0.00037500739203492645,
+          0.030181049506462714,
+          17.400494542669097
+        ],
+        [
+          -1.1043537848311616e-05,
+          4.569306166873604e-08,
+          1.0000004153036026
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9552789303826,
+            961.0926694329183
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.24557876586914,
+            46.514488220214844
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.28447488584476,
+            939.9264840182649
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.462474822998047,
+            45.78401565551758
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.80256652832031,
+            45.27136993408203
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51680564880371,
+            33.405887603759766
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8287250384024,
+            172.23387096774192
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39409637451172,
+            22.481428146362305
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2441897484875,
+            973.7121935689271
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.533790588378906,
+            46.95677185058594
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5529506871463,
+            438.2856372945297
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.582698822021484,
+            30.59569549560547
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 182,
+      "time_s": 6.996,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.023,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699177964151204,
+          2.0522366427128267e-06,
+          23.432790722642526
+        ],
+        [
+          -0.000375044112524653,
+          0.030180826565616787,
+          17.400592153882066
+        ],
+        [
+          -1.1044185630202524e-05,
+          4.29976645856324e-08,
+          1.0000003957572592
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9301895515487,
+            961.0693481276005
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.24479675292969,
+            46.51377487182617
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.28447488584476,
+            939.9264840182649
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.462465286254883,
+            45.784019470214844
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.802547454833984,
+            45.271366119384766
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51682472229004,
+            33.405914306640625
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8287250384024,
+            172.23387096774192
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.394065856933594,
+            22.481477737426758
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2326984126983,
+            973.7012698412698
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.533424377441406,
+            46.9564323425293
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5529506871463,
+            438.2856372945297
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.582679748535156,
+            30.595718383789062
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 195,
+      "time_s": 7.496,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.024,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699069006076155,
+          1.878772179960491e-06,
+          23.432884993546796
+        ],
+        [
+          -0.00037504192732594027,
+          0.030180584127777542,
+          17.40065721252255
+        ],
+        [
+          -1.1044275396936895e-05,
+          3.97002900200547e-08,
+          1.0000003610883559
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9301895515487,
+            961.0693481276005
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.24479293823242,
+            46.51375961303711
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.27189781021897,
+            939.930200729927
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.46209144592285,
+            45.78411102294922
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.80254364013672,
+            45.27135467529297
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51686668395996,
+            33.40591049194336
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8916857360792,
+            172.2425629290618
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.395992279052734,
+            22.481775283813477
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2200063311172,
+            973.7261791706236
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.53302764892578,
+            46.957183837890625
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5740890688259,
+            438.28933873144393
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58332443237305,
+            30.59583854675293
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    },
+    {
+      "frame": 208,
+      "time_s": 7.995,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.024,
+        "movement_px": 0.04
+      },
+      "image_to_pitch": [
+        [
+          0.029699197799225318,
+          2.0642758540690943e-06,
+          23.43280223928223
+        ],
+        [
+          -0.00037502100495273203,
+          0.030180845262731328,
+          17.40056898209419
+        ],
+        [
+          -1.104398531347171e-05,
+          4.344424132936453e-08,
+          1.0000003913939102
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            775,
+            946,
+            810,
+            972
+          ],
+          "footpoint": [
+            787.9552789303826,
+            961.0926694329183
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            47.24557113647461,
+            46.51447296142578
+          ],
+          "track_id": 1,
+          "observed": true
+        },
+        {
+          "box": [
+            109,
+            920,
+            159,
+            968
+          ],
+          "footpoint": [
+            134.27189781021897,
+            939.930200729927
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            27.462100982666016,
+            45.78410720825195
+          ],
+          "track_id": 2,
+          "observed": true
+        },
+        {
+          "box": [
+            832,
+            912,
+            848,
+            928
+          ],
+          "footpoint": [
+            839.0,
+            920.0462962962963
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            48.80255889892578,
+            45.27135467529297
+          ],
+          "track_id": 3,
+          "observed": true
+        },
+        {
+          "box": [
+            12,
+            521,
+            60,
+            544
+          ],
+          "footpoint": [
+            36.15335868187579,
+            530.3472750316856
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            24.51683807373047,
+            33.4058952331543
+          ],
+          "track_id": 4,
+          "observed": true
+        },
+        {
+          "box": [
+            906,
+            162,
+            946,
+            186
+          ],
+          "footpoint": [
+            923.8916857360792,
+            172.2425629290618
+          ],
+          "confidence": 0.5,
+          "team": "own",
+          "team_confidence": 0.5,
+          "xy": [
+            51.39601135253906,
+            22.481731414794922
+          ],
+          "track_id": 5,
+          "observed": true
+        },
+        {
+          "box": [
+            1174,
+            961,
+            1208,
+            990
+          ],
+          "footpoint": [
+            1189.2375954198474,
+            973.7395038167939
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            59.5335807800293,
+            46.95759201049805
+          ],
+          "track_id": 6,
+          "observed": true
+        },
+        {
+          "box": [
+            849,
+            425,
+            884,
+            456
+          ],
+          "footpoint": [
+            864.5740890688259,
+            438.28933873144393
+          ],
+          "confidence": 0.5,
+          "team": "opponent",
+          "team_confidence": 0.5,
+          "xy": [
+            49.58333969116211,
+            30.595823287963867
+          ],
+          "track_id": 7,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Partial view: only local support distances are assessed; teammates may be outside the image.",
+        "coverage": 0.455,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {},
+        "local_valid": true,
+        "local_signals": [
+          {
+            "kind": "support_isolation",
+            "key": "support_isolation:5",
+            "track_ids": [
+              5
+            ],
+            "value": 22.94,
+            "threshold": 22,
+            "unit": "m"
+          }
+        ]
+      },
+      "active_events": [
+        "event-1"
+      ]
+    }
+  ],
+  "warnings": [
+    "Overhead kit blobs can include nonplayers and split or merge jerseys. Confirm detections before interpreting distances.",
+    "Most frames do not show enough confidently assigned players for whole-team formation analysis. Local support observations may omit off-screen teammates."
+  ],
+  "manifest": {
+    "schema_version": 1,
+    "created_utc": "2026-11-18T11:26:37.179908+00:00",
+    "input_sha256": "c7fbdc896ae2217023e0512bfa6801d03466eebd5ca42d68734e1f6c8318b054",
+    "configuration": {
+      "formation": "4-3-3",
+      "direction": 1,
+      "detector": "overhead",
+      "own_colour": "#d16d3a",
+      "opponent_colour": "#80f78e",
+      "confidence": 0.3,
+      "sample_fps": 2.0,
+      "start_s": 0,
+      "end_s": 8.0,
+      "corners": [
+        [
+          960.0,
+          250.0
+        ],
+        [
+          1258.0,
+          550.0
+        ],
+        [
+          960.0,
+          850.0
+        ],
+        [
+          660.0,
+          550.0
+        ]
+      ],
+      "world_points": [
+        [
+          52.5,
+          24.85
+        ],
+        [
+          61.65,
+          34.0
+        ],
+        [
+          52.5,
+          43.15
+        ],
+        [
+          43.35,
+          34.0
+        ]
+      ],
+      "overhead_tolerance": 38,
+      "compensate_camera": true,
+      "keyframes": [],
+      "possession": "unknown",
+      "possession_segments": [],
+      "thresholds": {
+        "deviation_m": 8,
+        "unit_gap_m": 27,
+        "defensive_gap_m": 23,
+        "depth_m": 58,
+        "isolation_m": 22,
+        "persistence_s": 0.8
+      }
+    },
+    "model": {
+      "name": "overhead",
+      "weights_sha256": null,
+      "ultralytics_version": null
+    },
+    "python": "3.10.11",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 26.01470988831381,
+      "frame_count": 955,
+      "duration_s": 36.71
+    },
+    "effective_sample_fps": 2.0011,
+    "timing_scope": "Entire processing pipeline, including decoding, registration, detection, tactics and video writing",
+    "seconds": 25.14,
+    "evidence_status": "Engineering run; no held-out tactical accuracy or coach agreement claimed"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "revision": 1,
+  "clip_id": "4735a464cb614c78a8113246861c1c9f",
+  "reviewer": "Automated UI fixture, not a human coach",
+  "reviewer_role": "analyst",
+  "reviewed_periods": [
+    {
+      "start_s": 0.0,
+      "end_s": 6.0
+    }
+  ],
+  "manual_events": [
+    {
+      "start_s": 1.0,
+      "end_s": 1.5,
+      "id": "7df91532-97c2-4949-bbc9-d38441ec9c8e",
+      "kind": "unit_gap",
+      "judgement": "issue",
+      "notes": "Automated UI fixture \u2014 not tactical ground truth"
+    }
+  ],
+  "attested": true,
+  "job_id": "ed278a141c7445bbb148d0dc073d6c75",
+  "annotation_context": "Human review with access to machine predictions",
+  "saved_utc": "2026-11-18T12:01:58.173862+00:00"
+}

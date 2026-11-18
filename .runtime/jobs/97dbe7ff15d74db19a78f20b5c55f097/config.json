@@ -1,0 +1,43 @@
+{
+  "formation": "4-3-3",
+  "direction": 1,
+  "detector": "players",
+  "own_colour": "#ecece5",
+  "opponent_colour": "#2a4850",
+  "confidence": 0.15,
+  "sample_fps": 2.0,
+  "start_s": 0,
+  "end_s": null,
+  "corners": [
+    [
+      111.0,
+      47.0
+    ],
+    [
+      651.0,
+      47.0
+    ],
+    [
+      765.0,
+      425.0
+    ],
+    [
+      5.0,
+      425.0
+    ]
+  ],
+  "world_points": null,
+  "overhead_tolerance": 38,
+  "compensate_camera": true,
+  "keyframes": [],
+  "possession": "unknown",
+  "possession_segments": [],
+  "thresholds": {
+    "deviation_m": 8,
+    "unit_gap_m": 27,
+    "defensive_gap_m": 23,
+    "depth_m": 58,
+    "isolation_m": 22,
+    "persistence_s": 0.8
+  }
+}

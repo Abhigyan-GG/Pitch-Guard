@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T11:48:39.230170+00:00",
+  "rule_version": "geometric-coaching-v1",
+  "source_checksums": {
+    "pipeline.py": "a31b504b4fcae1aac35a42c76ce1cdd17dbf6d7ab88900e5a9c2e2c7b7125ed3",
+    "vision.py": "28f5644b47a1c6c02ce82c1fe2963a551503173f4fc924808d5204dee4bc7b43",
+    "coaching.py": "7d5d3bcbe001f7f969be30cb0cd10debb0738db2dbc19b50b181caace8cd6c5c",
+    "formations.py": "85c11123e98c7606d74f731fc56f69fa5ba9bd44d9365527d1f745a0176b159b",
+    "schemas.py": "3b145a103f83927582dae112ef97cd782e33c2f5f2fd4a41c7957fe607d62d52"
+  },
+  "input_sha256": "944638d94b748fc268a1f801991db9ee3c0eb3053e6298ad0665a3197ac25631",
+  "configuration": {
+    "formation": "4-3-3",
+    "direction": 1,
+    "detector": "players",
+    "own_colour": "#ecece5",
+    "opponent_colour": "#2a4850",
+    "confidence": 0.15,
+    "sample_fps": 2.0,
+    "start_s": 0,
+    "end_s": null,
+    "corners": [
+      [
+        111.0,
+        47.0
+      ],
+      [
+        651.0,
+        47.0
+      ],
+      [
+        765.0,
+        425.0
+      ],
+      [
+        5.0,
+        425.0
+      ]
+    ],
+    "world_points": null,
+    "overhead_tolerance": 38,
+    "compensate_camera": true,
+    "keyframes": [],
+    "possession": "unknown",
+    "possession_segments": [],
+    "thresholds": {
+      "deviation_m": 8,
+      "unit_gap_m": 27,
+      "defensive_gap_m": 23,
+      "depth_m": 58,
+      "isolation_m": 22,
+      "persistence_s": 0.8
+    }
+  },
+  "model": {
+    "name": "football-yolov8s.pt",
+    "classes": {
+      "0": "ball",
+      "1": "goalkeeper",
+      "2": "player",
+      "3": "referee"
+    },
+    "weights_sha256": "74b71f4ab2f5f8bfafff3679a2f5a06f994fc6fe6963df500a223d80e8047c70",
+    "ultralytics_version": "8.3.146"
+  },
+  "python": "3.10.11",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "video": {
+    "width": 768,
+    "height": 432,
+    "fps": 25.0,
+    "frame_count": 220,
+    "duration_s": 8.8
+  },
+  "effective_sample_fps": 2.0833,
+  "timing_scope": "Entire processing pipeline, including decoding, registration, detection, tactics and video writing",
+  "seconds": 38.031,
+  "evidence_status": "Engineering run; no held-out tactical accuracy or coach agreement claimed"
+}

@@ -1,0 +1,1420 @@
+{
+  "summary": {
+    "samples": 19,
+    "formation_coverage": 0.0,
+    "local_only_coverage": 0.0,
+    "camera_coverage": 1.0,
+    "events": 0,
+    "average_detections": 1.68,
+    "start_s": 0,
+    "end_s": 8.8
+  },
+  "events": [],
+  "timeline": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.0,
+        "movement_px": 0.0
+      },
+      "image_to_pitch": [
+        [
+          0.2048198988543713,
+          0.05743626793270799,
+          -25.434513365672522
+        ],
+        [
+          5.113160961978856e-18,
+          0.266694189286821,
+          -12.534626896480585
+        ],
+        [
+          7.349016764831674e-19,
+          0.0011353080813293571,
+          0.9999999999999999
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            195.9184112548828,
+            19.618497848510742,
+            203.0850067138672,
+            31.302581787109375
+          ],
+          "footpoint": [
+            199.501708984375,
+            31.302581787109375
+          ],
+          "confidence": 0.21275854110717773,
+          "team": "opponent",
+          "team_confidence": 0.618,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 1.0,
+        "validation_error_px": 0.068,
+        "movement_px": 0.76
+      },
+      "image_to_pitch": [
+        [
+          0.2050194804294507,
+          0.05765358674209309,
+          -25.59933669162985
+        ],
+        [
+          -1.9662746332082447e-06,
+          0.2671229468451683,
+          -12.711629424619602
+        ],
+        [
+          1.0802143794478641e-07,
+          0.0011384726412979429,
+          0.9992455468856958
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            195.7183074951172,
+            17.258804321289062,
+            204.1015167236328,
+            33.329776763916016
+          ],
+          "footpoint": [
+            199.909912109375,
+            33.329776763916016
+          ],
+          "confidence": 0.24404700100421906,
+          "team": "opponent",
+          "team_confidence": 0.726,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 24,
+      "time_s": 0.96,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.973,
+        "validation_error_px": 0.085,
+        "movement_px": 1.43
+      },
+      "image_to_pitch": [
+        [
+          0.20524470446039178,
+          0.05745239385830176,
+          -25.69437794400946
+        ],
+        [
+          -7.780177099576273e-06,
+          0.2671891313380532,
+          -12.713771670719533
+        ],
+        [
+          1.2171936086035737e-06,
+          0.0011351131597003518,
+          0.9992375818512568
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            327.29376220703125,
+            18.687023162841797,
+            334.54815673828125,
+            32.0576171875
+          ],
+          "footpoint": [
+            330.92095947265625,
+            32.0576171875
+          ],
+          "confidence": 0.2690560817718506,
+          "team": "opponent",
+          "team_confidence": 0.788,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            195.70166015625,
+            18.041030883789062,
+            203.7716827392578,
+            34.07359313964844
+          ],
+          "footpoint": [
+            199.73666381835938,
+            34.07359313964844
+          ],
+          "confidence": 0.2055373638868332,
+          "team": "opponent",
+          "team_confidence": 0.666,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 36,
+      "time_s": 1.44,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.985,
+        "validation_error_px": 0.127,
+        "movement_px": 1.86
+      },
+      "image_to_pitch": [
+        [
+          0.20572785092621945,
+          0.057999713175536975,
+          -25.93905508948315
+        ],
+        [
+          6.0117125538917803e-05,
+          0.2677982604513513,
+          -12.870697921869551
+        ],
+        [
+          3.00656548598643e-06,
+          0.001141190948994296,
+          0.9985621001316134
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            196.28695678710938,
+            19.09209442138672,
+            204.3605499267578,
+            34.40696334838867
+          ],
+          "footpoint": [
+            200.32376098632812,
+            34.40696334838867
+          ],
+          "confidence": 0.18418487906455994,
+          "team": "opponent",
+          "team_confidence": 0.748,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 48,
+      "time_s": 1.92,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.97,
+        "validation_error_px": 0.14,
+        "movement_px": 2.79
+      },
+      "image_to_pitch": [
+        [
+          0.20598971710122865,
+          0.05754868955971554,
+          -26.049264349758463
+        ],
+        [
+          0.0001560723231589742,
+          0.26784549296078064,
+          -13.037726094106329
+        ],
+        [
+          3.81335405993369e-06,
+          0.0011384802170983125,
+          0.9978538223411118
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            269.53582763671875,
+            22.596385955810547,
+            275.65631103515625,
+            32.720375061035156
+          ],
+          "footpoint": [
+            272.5960693359375,
+            32.720375061035156
+          ],
+          "confidence": 0.26869216561317444,
+          "team": "opponent",
+          "team_confidence": 0.816,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            519.5645751953125,
+            22.40641212463379,
+            525.225341796875,
+            30.516860961914062
+          ],
+          "footpoint": [
+            522.3949584960938,
+            30.516860961914062
+          ],
+          "confidence": 0.24081885814666748,
+          "team": "opponent",
+          "team_confidence": 0.505,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            196.5862274169922,
+            20.293994903564453,
+            204.205810546875,
+            33.86841583251953
+          ],
+          "footpoint": [
+            200.39602661132812,
+            33.86841583251953
+          ],
+          "confidence": 0.20182639360427856,
+          "team": "opponent",
+          "team_confidence": 0.689,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.976,
+        "validation_error_px": 0.142,
+        "movement_px": 3.0
+      },
+      "image_to_pitch": [
+        [
+          0.20613600061518433,
+          0.05766515372243233,
+          -26.130267900547942
+        ],
+        [
+          6.91019840146943e-05,
+          0.26799751006625944,
+          -13.138322176185818
+        ],
+        [
+          3.468414886016169e-06,
+          0.001137060102549766,
+          0.997429924221347
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            480.054443359375,
+            20.658641815185547,
+            486.80999755859375,
+            31.075878143310547
+          ],
+          "footpoint": [
+            483.4322204589844,
+            31.075878143310547
+          ],
+          "confidence": 0.3594290316104889,
+          "team": "opponent",
+          "team_confidence": 0.61,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            197.30091857910156,
+            21.875545501708984,
+            204.26927185058594,
+            33.36989212036133
+          ],
+          "footpoint": [
+            200.78509521484375,
+            33.36989212036133
+          ],
+          "confidence": 0.19390548765659332,
+          "team": "opponent",
+          "team_confidence": 0.695,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 72,
+      "time_s": 2.88,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.97,
+        "validation_error_px": 0.182,
+        "movement_px": 3.37
+      },
+      "image_to_pitch": [
+        [
+          0.20624436192928486,
+          0.057584015651739,
+          -26.179977817212432
+        ],
+        [
+          -1.6171941313362287e-05,
+          0.2680335335162031,
+          -13.259090355413148
+        ],
+        [
+          2.3180386638657403e-06,
+          0.0011351074787673827,
+          0.9969251116222146
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            197.53587341308594,
+            22.24165916442871,
+            204.51370239257812,
+            33.439449310302734
+          ],
+          "footpoint": [
+            201.0247802734375,
+            33.439449310302734
+          ],
+          "confidence": 0.19717268645763397,
+          "team": "opponent",
+          "team_confidence": 0.718,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 84,
+      "time_s": 3.36,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.955,
+        "validation_error_px": 0.209,
+        "movement_px": 3.86
+      },
+      "image_to_pitch": [
+        [
+          0.20655985026644408,
+          0.057615418733973085,
+          -26.274733539127656
+        ],
+        [
+          6.657452253390244e-06,
+          0.2682643547047301,
+          -13.34876986660033
+        ],
+        [
+          3.0521319002293618e-06,
+          0.0011344957755742668,
+          0.9965472308842618
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            197.1570281982422,
+            21.920330047607422,
+            204.763671875,
+            33.542625427246094
+          ],
+          "footpoint": [
+            200.96035766601562,
+            33.542625427246094
+          ],
+          "confidence": 0.21459843218326569,
+          "team": "opponent",
+          "team_confidence": 0.704,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            255.835205078125,
+            19.012439727783203,
+            262.83648681640625,
+            33.36628341674805
+          ],
+          "footpoint": [
+            259.3358459472656,
+            33.36628341674805
+          ],
+          "confidence": 0.20689059793949127,
+          "team": "opponent",
+          "team_confidence": 0.714,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 96,
+      "time_s": 3.84,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.916,
+        "validation_error_px": 0.22,
+        "movement_px": 4.46
+      },
+      "image_to_pitch": [
+        [
+          0.20685076573062613,
+          0.05773554178259297,
+          -26.419876301301816
+        ],
+        [
+          -7.774153896649607e-06,
+          0.2685848900606095,
+          -13.45828109137976
+        ],
+        [
+          3.7674002712809193e-06,
+          0.0011341356254715794,
+          0.9960852915407234
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            253.6226806640625,
+            16.998767852783203,
+            260.7628173828125,
+            31.465179443359375
+          ],
+          "footpoint": [
+            257.1927490234375,
+            31.465179443359375
+          ],
+          "confidence": 0.1708860993385315,
+          "team": "opponent",
+          "team_confidence": 0.71,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            198.1913299560547,
+            22.13656234741211,
+            204.73178100585938,
+            32.53590393066406
+          ],
+          "footpoint": [
+            201.4615478515625,
+            32.53590393066406
+          ],
+          "confidence": 0.16641075909137726,
+          "team": "opponent",
+          "team_confidence": 0.644,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 108,
+      "time_s": 4.32,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.906,
+        "validation_error_px": 0.156,
+        "movement_px": 6.56
+      },
+      "image_to_pitch": [
+        [
+          0.20684053160486846,
+          0.05687874439060195,
+          -26.55976788077306
+        ],
+        [
+          6.825616201210588e-05,
+          0.2679593221212103,
+          -13.578434220168983
+        ],
+        [
+          2.1594341920439843e-06,
+          0.0011275711132469112,
+          0.995599485161458
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            279.53521728515625,
+            26.5034122467041,
+            286.8585510253906,
+            44.264739990234375
+          ],
+          "footpoint": [
+            283.1968994140625,
+            44.264739990234375
+          ],
+          "confidence": 0.2742650806903839,
+          "team": "opponent",
+          "team_confidence": 0.813,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            199.00265502929688,
+            21.774799346923828,
+            205.3690185546875,
+            32.458396911621094
+          ],
+          "footpoint": [
+            202.1858367919922,
+            32.458396911621094
+          ],
+          "confidence": 0.2061547189950943,
+          "team": "opponent",
+          "team_confidence": 0.716,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 120,
+      "time_s": 4.8,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.9,
+        "validation_error_px": 0.154,
+        "movement_px": 7.42
+      },
+      "image_to_pitch": [
+        [
+          0.20710354230780872,
+          0.056798842385036984,
+          -26.72008507317164
+        ],
+        [
+          0.00011303134662506177,
+          0.2681006858779518,
+          -13.745311029094745
+        ],
+        [
+          2.419512643783588e-06,
+          0.0011269817399022985,
+          0.9949011340782604
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            199.09060668945312,
+            21.689926147460938,
+            205.79638671875,
+            33.870906829833984
+          ],
+          "footpoint": [
+            202.44349670410156,
+            33.870906829833984
+          ],
+          "confidence": 0.23500730097293854,
+          "team": "opponent",
+          "team_confidence": 0.709,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 132,
+      "time_s": 5.28,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.87,
+        "validation_error_px": 0.165,
+        "movement_px": 8.58
+      },
+      "image_to_pitch": [
+        [
+          0.2071946887304765,
+          0.056528745442127645,
+          -26.845151339823158
+        ],
+        [
+          0.00010516550327580062,
+          0.2680456246001484,
+          -13.815704450343471
+        ],
+        [
+          1.6009480430350313e-06,
+          0.0011243866175470406,
+          0.994619804622831
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            199.56332397460938,
+            22.219036102294922,
+            206.7153778076172,
+            33.19633102416992
+          ],
+          "footpoint": [
+            203.13934326171875,
+            33.19633102416992
+          ],
+          "confidence": 0.19576865434646606,
+          "team": "opponent",
+          "team_confidence": 0.793,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            199.034423828125,
+            22.66803741455078,
+            206.40780639648438,
+            36.69055938720703
+          ],
+          "footpoint": [
+            202.7211151123047,
+            36.69055938720703
+          ],
+          "confidence": 0.18015114963054657,
+          "team": "opponent",
+          "team_confidence": 0.663,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 144,
+      "time_s": 5.76,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.873,
+        "validation_error_px": 0.194,
+        "movement_px": 9.13
+      },
+      "image_to_pitch": [
+        [
+          0.2076069947541427,
+          0.05662620633754541,
+          -26.994799166927596
+        ],
+        [
+          0.00012971234825587423,
+          0.2682385583472996,
+          -13.939380639104096
+        ],
+        [
+          3.3873280734856445e-06,
+          0.0011227397602613823,
+          0.9941029437531607
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            271.6748046875,
+            25.364538192749023,
+            278.1117248535156,
+            35.790794372558594
+          ],
+          "footpoint": [
+            274.89324951171875,
+            35.790794372558594
+          ],
+          "confidence": 0.15936118364334106,
+          "team": "opponent",
+          "team_confidence": 0.809,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            199.1455841064453,
+            24.07070541381836,
+            206.5011749267578,
+            36.72100067138672
+          ],
+          "footpoint": [
+            202.82337951660156,
+            36.72100067138672
+          ],
+          "confidence": 0.15162241458892822,
+          "team": "opponent",
+          "team_confidence": 0.67,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 156,
+      "time_s": 6.24,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.884,
+        "validation_error_px": 0.173,
+        "movement_px": 9.77
+      },
+      "image_to_pitch": [
+        [
+          0.20798025006236118,
+          0.05670184625583164,
+          -27.15873695510266
+        ],
+        [
+          6.687809138935532e-05,
+          0.26840184227664887,
+          -14.016598993648504
+        ],
+        [
+          4.214962848036754e-06,
+          0.001122429053772699,
+          0.9937758415278198
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            270.56195068359375,
+            26.417505264282227,
+            276.37408447265625,
+            36.03913497924805
+          ],
+          "footpoint": [
+            273.468017578125,
+            36.03913497924805
+          ],
+          "confidence": 0.21540804207324982,
+          "team": "opponent",
+          "team_confidence": 0.46,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            198.884033203125,
+            25.0483341217041,
+            206.7014617919922,
+            36.11159133911133
+          ],
+          "footpoint": [
+            202.79275512695312,
+            36.11159133911133
+          ],
+          "confidence": 0.16117073595523834,
+          "team": "opponent",
+          "team_confidence": 0.598,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 168,
+      "time_s": 6.72,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.888,
+        "validation_error_px": 0.199,
+        "movement_px": 10.46
+      },
+      "image_to_pitch": [
+        [
+          0.2081735718216382,
+          0.05659665576836581,
+          -27.28968800397869
+        ],
+        [
+          -4.184743499188472e-05,
+          0.2683275304403593,
+          -14.227641863475446
+        ],
+        [
+          3.1977030533754375e-06,
+          0.0011194690118169375,
+          0.9929124332385842
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            219.647705078125,
+            26.457250595092773,
+            224.31430053710938,
+            34.63029861450195
+          ],
+          "footpoint": [
+            221.9810028076172,
+            34.63029861450195
+          ],
+          "confidence": 0.1636703908443451,
+          "team": "opponent",
+          "team_confidence": 0.517,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            270.3529052734375,
+            27.220874786376953,
+            276.09466552734375,
+            36.512001037597656
+          ],
+          "footpoint": [
+            273.2237854003906,
+            36.512001037597656
+          ],
+          "confidence": 0.16346487402915955,
+          "team": "opponent",
+          "team_confidence": 0.708,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 180,
+      "time_s": 7.2,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.892,
+        "validation_error_px": 0.213,
+        "movement_px": 11.46
+      },
+      "image_to_pitch": [
+        [
+          0.2086229051992411,
+          0.056591894957022625,
+          -27.518500248261695
+        ],
+        [
+          -0.00010936278114764169,
+          0.2685062650908663,
+          -14.551083151015145
+        ],
+        [
+          3.401309119212371e-06,
+          0.001116226604339482,
+          0.991586585992499
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            481.7886657714844,
+            25.395343780517578,
+            486.94122314453125,
+            34.82295608520508
+          ],
+          "footpoint": [
+            484.36492919921875,
+            34.82295608520508
+          ],
+          "confidence": 0.19397588074207306,
+          "team": "opponent",
+          "team_confidence": 0.469,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            270.30975341796875,
+            27.591461181640625,
+            275.6478576660156,
+            37.50215530395508
+          ],
+          "footpoint": [
+            272.97882080078125,
+            37.50215530395508
+          ],
+          "confidence": 0.1666981428861618,
+          "team": "opponent",
+          "team_confidence": 0.787,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            200.2987518310547,
+            25.243703842163086,
+            207.5078887939453,
+            38.654029846191406
+          ],
+          "footpoint": [
+            203.9033203125,
+            38.654029846191406
+          ],
+          "confidence": 0.1644461452960968,
+          "team": "opponent",
+          "team_confidence": 0.749,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 192,
+      "time_s": 7.68,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.877,
+        "validation_error_px": 0.23,
+        "movement_px": 13.09
+      },
+      "image_to_pitch": [
+        [
+          0.20922405845370978,
+          0.056471036460249126,
+          -27.817788418318017
+        ],
+        [
+          -0.00017331681123480732,
+          0.2688728866583367,
+          -14.814695989998002
+        ],
+        [
+          3.6968109762477227e-06,
+          0.0011147516427970061,
+          0.9905066114246666
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            270.819580078125,
+            28.26755714416504,
+            275.6717224121094,
+            37.79222106933594
+          ],
+          "footpoint": [
+            273.24566650390625,
+            37.79222106933594
+          ],
+          "confidence": 0.18574033677577972,
+          "team": "opponent",
+          "team_confidence": 0.834,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        },
+        {
+          "box": [
+            236.23477172851562,
+            28.825878143310547,
+            242.6018524169922,
+            37.231605529785156
+          ],
+          "footpoint": [
+            239.41830444335938,
+            37.231605529785156
+          ],
+          "confidence": 0.1707707792520523,
+          "team": "opponent",
+          "team_confidence": 0.48,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 204,
+      "time_s": 8.16,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.902,
+        "validation_error_px": 0.277,
+        "movement_px": 14.53
+      },
+      "image_to_pitch": [
+        [
+          0.20951126489801924,
+          0.056153404694855046,
+          -27.981574899307272
+        ],
+        [
+          -0.0002650931596599094,
+          0.2688631267880443,
+          -14.997160343686675
+        ],
+        [
+          2.892830736325162e-06,
+          0.0011087526629881706,
+          0.9898062044359331
+        ]
+      ],
+      "observations": [
+        {
+          "box": [
+            271.04833984375,
+            28.492961883544922,
+            275.82568359375,
+            37.68815231323242
+          ],
+          "footpoint": [
+            273.43701171875,
+            37.68815231323242
+          ],
+          "confidence": 0.16570515930652618,
+          "team": "opponent",
+          "team_confidence": 0.749,
+          "xy": null,
+          "track_id": null,
+          "observed": true
+        }
+      ],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    },
+    {
+      "frame": 216,
+      "time_s": 8.64,
+      "camera": {
+        "valid": true,
+        "reason": "Reference features verified",
+        "inlier_ratio": 0.859,
+        "validation_error_px": 0.326,
+        "movement_px": 15.5
+      },
+      "image_to_pitch": [
+        [
+          0.210104614600136,
+          0.05626658049053402,
+          -28.243636057430333
+        ],
+        [
+          -0.0002975448603918195,
+          0.269166219742595,
+          -15.194934127121206
+        ],
+        [
+          4.302705847745159e-06,
+          0.0011080614420328702,
+          0.9889892064142
+        ]
+      ],
+      "observations": [],
+      "shape": {
+        "valid": false,
+        "reason": "Need 8-11 own and 7-11 opponent observations for team-shape review.",
+        "coverage": 0.0,
+        "signals": [],
+        "roles": [],
+        "lanes": [],
+        "metrics": {}
+      },
+      "active_events": []
+    }
+  ],
+  "warnings": [
+    "Most frames do not show enough confidently assigned players for whole-team formation analysis. Local support observations may omit off-screen teammates."
+  ],
+  "manifest": {
+    "schema_version": 1,
+    "created_utc": "2026-11-18T11:27:01.659854+00:00",
+    "input_sha256": "944638d94b748fc268a1f801991db9ee3c0eb3053e6298ad0665a3197ac25631",
+    "configuration": {
+      "formation": "4-3-3",
+      "direction": 1,
+      "detector": "players",
+      "own_colour": "#ecece5",
+      "opponent_colour": "#2a4850",
+      "confidence": 0.15,
+      "sample_fps": 2.0,
+      "start_s": 0,
+      "end_s": null,
+      "corners": [
+        [
+          111.0,
+          47.0
+        ],
+        [
+          651.0,
+          47.0
+        ],
+        [
+          765.0,
+          425.0
+        ],
+        [
+          5.0,
+          425.0
+        ]
+      ],
+      "world_points": null,
+      "overhead_tolerance": 38,
+      "compensate_camera": true,
+      "keyframes": [],
+      "possession": "unknown",
+      "possession_segments": [],
+      "thresholds": {
+        "deviation_m": 8,
+        "unit_gap_m": 27,
+        "defensive_gap_m": 23,
+        "depth_m": 58,
+        "isolation_m": 22,
+        "persistence_s": 0.8
+      }
+    },
+    "model": {
+      "name": "YOLOv8n COCO person",
+      "weights_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "ultralytics_version": "8.3.146"
+    },
+    "python": "3.10.11",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "video": {
+      "width": 768,
+      "height": 432,
+      "fps": 25.0,
+      "frame_count": 220,
+      "duration_s": 8.8
+    },
+    "effective_sample_fps": 2.0833,
+    "timing_scope": "Entire processing pipeline, including decoding, registration, detection, tactics and video writing",
+    "seconds": 21.595,
+    "evidence_status": "Engineering run; no held-out tactical accuracy or coach agreement claimed"
+  }
+}

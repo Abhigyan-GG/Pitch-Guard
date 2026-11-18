@@ -1,0 +1,19 @@
+{
+  "id": "ed278a141c7445bbb148d0dc073d6c75",
+  "upload_id": "4735a464cb614c78a8113246861c1c9f",
+  "name": "synthetic_input.avi",
+  "status": "completed",
+  "progress": 1,
+  "message": "Ready for review",
+  "created_utc": "2026-11-18T12:01:54.516782+00:00",
+  "summary": {
+    "samples": 30,
+    "formation_coverage": 1.0,
+    "local_only_coverage": 0.0,
+    "camera_coverage": 1.0,
+    "events": 1,
+    "average_detections": 22.0,
+    "start_s": 0.0,
+    "end_s": 6.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "formation inputs",
+    "context-dependent advice",
+    "demo analysis",
+    "pitch review",
+    "event notes persisted",
+    "missed-event annotations",
+    "reviewed negative periods",
+    "human labels separate from predictions",
+    "analyst labels do not claim coach verification",
+    "playback",
+    "session reopening",
+    "mobile layout",
+    "help",
+    "native real-video upload and keyboard calibration when supplied clip exists"
+  ],
+  "browser_errors": []
+}

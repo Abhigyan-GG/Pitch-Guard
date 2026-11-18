@@ -1,0 +1,151 @@
+{
+  "verified_utc": "2026-11-18T12:04:45.782323+00:00",
+  "python_tests": {
+    "command": "python -m pytest -q",
+    "passed": 47,
+    "failed": 0
+  },
+  "javascript_syntax": {
+    "command": "node --check web/app.js",
+    "passed": true
+  },
+  "python_compile": "All src/, scripts/ and run_app.py compiled",
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "formation inputs",
+      "context-dependent advice",
+      "demo analysis",
+      "pitch review",
+      "event notes persisted",
+      "missed-event annotations",
+      "reviewed negative periods",
+      "human labels separate from predictions",
+      "analyst labels do not claim coach verification",
+      "playback",
+      "session reopening",
+      "mobile layout",
+      "help",
+      "native real-video upload and keyboard calibration when supplied clip exists"
+    ],
+    "browser_errors": []
+  },
+  "real_videos": {
+    "evidence_type": "Unlabelled real-video engineering smoke tests",
+    "clips": [
+      {
+        "name": "Top View Of A Football Match by Vincent Film - Stock Video _ Motion Array - Opera 2026-11-18 16-31-44.mp4",
+        "job_id": "76768e772de642b89ebdd8b445315974",
+        "video": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 26.01470988831381,
+          "frame_count": 955,
+          "duration_s": 36.71
+        },
+        "summary": {
+          "samples": 74,
+          "formation_coverage": 0.0,
+          "local_only_coverage": 0.5,
+          "camera_coverage": 0.5405,
+          "events": 2,
+          "average_detections": 5.32,
+          "start_s": 0,
+          "end_s": 36.71
+        },
+        "warnings": [
+          "Overhead kit blobs can include nonplayers and split or merge jerseys. Confirm detections before interpreting distances.",
+          "Most frames do not show enough confidently assigned players for whole-team formation analysis. Local support observations may omit off-screen teammates.",
+          "Camera calibration was unavailable in 34 samples. Pitch-based analysis abstained during those samples; add calibration keyframes for those sections."
+        ],
+        "model": {
+          "name": "overhead",
+          "classes": null,
+          "weights_sha256": null,
+          "ultralytics_version": null
+        },
+        "runtime_seconds": 35.49,
+        "calibration_note": "Manual approximate landmarks for smoke testing, not independently verified ground truth"
+      },
+      {
+        "name": "gettyimages-1293195390-640_adpp.mp4",
+        "job_id": "a1b04171884c4f35a637833cfb025149",
+        "video": {
+          "width": 768,
+          "height": 432,
+          "fps": 25.0,
+          "frame_count": 220,
+          "duration_s": 8.8
+        },
+        "summary": {
+          "samples": 19,
+          "formation_coverage": 0.0,
+          "local_only_coverage": 0.6842,
+          "camera_coverage": 1.0,
+          "events": 0,
+          "average_detections": 9.37,
+          "start_s": 0,
+          "end_s": 8.8
+        },
+        "warnings": [
+          "Most frames do not show enough confidently assigned players for whole-team formation analysis. Local support observations may omit off-screen teammates."
+        ],
+        "model": {
+          "name": "football-yolov8s.pt",
+          "classes": {
+            "0": "ball",
+            "1": "goalkeeper",
+            "2": "player",
+            "3": "referee"
+          },
+          "weights_sha256": "74b71f4ab2f5f8bfafff3679a2f5a06f994fc6fe6963df500a223d80e8047c70",
+          "ultralytics_version": "8.3.146"
+        },
+        "runtime_seconds": 38.031,
+        "calibration_note": "Manual approximate landmarks for smoke testing, not independently verified ground truth"
+      }
+    ]
+  },
+  "software_features": [
+    "opponent formation input with pros and cons",
+    "contextual counter-system recommendation",
+    "match upload and local processing",
+    "learned player detection and explicit overhead mode",
+    "tracking and camera-registration validation",
+    "time-based geometric coaching events",
+    "interactive frame/pitch/timeline review",
+    "persistent coach verdicts and training cues",
+    "JSON/CSV/AVI exports",
+    "supervised training and independent label-driven evaluation tools",
+    "human-authored missed-event labels and reviewed negative periods",
+    "separate source-bound human label exports",
+    "revision-safe review saves",
+    "event-only evaluation without invented player positions"
+  ],
+  "external_validation": {
+    "status": "pending",
+    "labelled_real_clips": 0,
+    "coach_reviewed_truth_supplied": false,
+    "whole_team_coverage_on_supplied_clips": 0,
+    "required": [
+      "independent player/team/identity and calibration labels",
+      "coach-reviewed event and negative intervals",
+      "independent match splits",
+      "reviewer-approved frozen targets",
+      "held-out accuracy, agreement, sensitivity and baseline comparison"
+    ]
+  },
+  "source_checksums": {
+    "src\\vision.py": "28f5644b47a1c6c02ce82c1fe2963a551503173f4fc924808d5204dee4bc7b43",
+    "src\\coaching.py": "7d5d3bcbe001f7f969be30cb0cd10debb0738db2dbc19b50b181caace8cd6c5c",
+    "src\\pipeline.py": "a31b504b4fcae1aac35a42c76ce1cdd17dbf6d7ab88900e5a9c2e2c7b7125ed3",
+    "src\\server.py": "7abb0c945e0fbe205dcec6f89ad0ded865f1579ef10a34fee36e260976312b4b",
+    "web\\app.js": "7e27297823ef85d5a4d7943643401c3647a728b5f97bdbc4a750fe2d94357f13",
+    "src\\annotations.py": "06225f3a37fc2b528ae6d5c755de0ed49453e20568228ae3c9392bf352292fe5",
+    "src\\evaluation.py": "c674b03d591959b3bff9988b35c15dc43c706485779d9364663c53a9da9e07af"
+  },
+  "distant_detection_probe": {
+    "report": "results/distant_detection_experiment.json",
+    "decision": "Not integrated; visual inspection found watermark and field-marking false positives"
+  }
+}

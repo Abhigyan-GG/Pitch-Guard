@@ -20,6 +20,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from .formations import PROFILES, anchors, recommend
 from .pipeline import MODEL, ROOT, inspect_video, read_frame, run_analysis, save_json
 from .schemas import AdviceRequest, ReviewRequest, StartRequest
+from .annotations import AnnotationRequest, export_labels, new_annotations, validate_bounds
 
 
 def create_app(runtime=None):
@@ -55,14 +56,16 @@ def create_app(runtime=None):
         return json.loads(path.read_text())
 
     def status(job_id):
-        path=jobs/identity(job_id)/'status.json'
-        if not path.is_file():raise HTTPException(404,'Analysis not found')
-        return json.loads(path.read_text())
+        with lock:
+            path=jobs/identity(job_id)/'status.json'
+            if not path.is_file():raise HTTPException(404,'Analysis not found')
+            return json.loads(path.read_text())
 
     def result(job_id):
-        saved=status(job_id)
-        if saved['status']!='completed':raise HTTPException(409,'Analysis is not ready for review')
-        return json.loads((jobs/job_id/'result.json').read_text())
+        with lock:
+            saved=status(job_id)
+            if saved['status']!='completed':raise HTTPException(409,'Analysis is not ready for review')
+            return json.loads((jobs/job_id/'result.json').read_text())
 
     def public_upload(meta):
         return {k:v for k,v in meta.items() if k!='path'}
@@ -135,9 +138,19 @@ def create_app(runtime=None):
         if not ok:raise HTTPException(500,'Cannot render frame')
         return Response(encoded.tobytes(),media_type='image/jpeg',headers={'Cache-Control':'private, max-age=60'})
 
+    @app.get('/api/uploads')
+    def list_uploads():
+        with lock:
+            return [public_upload(json.loads(p.read_text())) for p in uploads.glob('*/metadata.json')]
+
+    @app.get('/api/uploads/{upload_id}')
+    def get_upload(upload_id:str):
+        return public_upload(metadata(upload_id))
+
     @app.get('/api/jobs')
     def list_jobs():
-        return sorted([json.loads(p.read_text()) for p in jobs.glob('*/status.json')],key=lambda j:j['created_utc'],reverse=True)[:50]
+        with lock:
+            return sorted([json.loads(p.read_text()) for p in jobs.glob('*/status.json')],key=lambda j:j['created_utc'],reverse=True)[:50]
 
     @app.post('/api/jobs',status_code=202)
     def start(request:StartRequest):
@@ -200,12 +213,37 @@ def create_app(runtime=None):
             save_json(jobs/job_id/'result.json',output)
         return event
 
+    def annotations(job_id):
+        saved=status(job_id)
+        if saved['status']!='completed':raise HTTPException(409,'Analysis is not ready for human labels')
+        path=jobs/job_id/'annotations.json'
+        return json.loads(path.read_text()) if path.exists() else new_annotations(job_id,saved['upload_id'])
+
+    @app.get('/api/jobs/{job_id}/annotations')
+    def get_annotations(job_id:str):
+        with lock:return annotations(job_id)
+
+    @app.put('/api/jobs/{job_id}/annotations')
+    def put_annotations(job_id:str,request:AnnotationRequest):
+        with lock:
+            prior=annotations(job_id);output=result(job_id)
+            if request.expected_revision!=prior['revision']:
+                raise HTTPException(409,'A newer review was saved in another tab. Reload these labels before replacing them.')
+            try:validate_bounds(request,output['summary']['start_s'],output['summary']['end_s'])
+            except ValueError as exc:raise HTTPException(422,str(exc))
+            saved={**prior,**request.model_dump(exclude={'expected_revision'}),'revision':prior['revision']+1,
+                   'saved_utc':datetime.now(timezone.utc).isoformat()}
+            save_json(jobs/job_id/'annotations.json',saved)
+            save_json(jobs/job_id/'human-labels.json',export_labels(saved,output['manifest']['input_sha256']))
+            return saved
+
     @app.get('/api/jobs/{job_id}/export/{filename}')
     def export(job_id:str,filename:str):
         status(job_id)
-        allowed={'result.json','manifest.json','tracks.csv','annotated.avi'}
+        allowed={'result.json','manifest.json','tracks.csv','annotated.avi','human-labels.json'}
         if filename not in allowed:raise HTTPException(404,'Export not found')
         if status(job_id)['status']!='completed':raise HTTPException(409,'Analysis is not ready')
+        if not (jobs/job_id/filename).is_file():raise HTTPException(404,'Save a human review before exporting its labels')
         return FileResponse(jobs/job_id/filename,filename=f'pitchguard-{job_id[:8]}-{filename}')
 
     @app.delete('/api/jobs/{job_id}',status_code=204)

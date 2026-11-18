@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T11:47:56.440727+00:00",
+  "rule_version": "geometric-coaching-v1",
+  "source_checksums": {
+    "pipeline.py": "a31b504b4fcae1aac35a42c76ce1cdd17dbf6d7ab88900e5a9c2e2c7b7125ed3",
+    "vision.py": "28f5644b47a1c6c02ce82c1fe2963a551503173f4fc924808d5204dee4bc7b43",
+    "coaching.py": "7d5d3bcbe001f7f969be30cb0cd10debb0738db2dbc19b50b181caace8cd6c5c",
+    "formations.py": "85c11123e98c7606d74f731fc56f69fa5ba9bd44d9365527d1f745a0176b159b",
+    "schemas.py": "3b145a103f83927582dae112ef97cd782e33c2f5f2fd4a41c7957fe607d62d52"
+  },
+  "input_sha256": "c7fbdc896ae2217023e0512bfa6801d03466eebd5ca42d68734e1f6c8318b054",
+  "configuration": {
+    "formation": "4-3-3",
+    "direction": 1,
+    "detector": "overhead",
+    "own_colour": "#d16d3a",
+    "opponent_colour": "#80f78e",
+    "confidence": 0.3,
+    "sample_fps": 2.0,
+    "start_s": 0,
+    "end_s": null,
+    "corners": [
+      [
+        960.0,
+        250.0
+      ],
+      [
+        1258.0,
+        550.0
+      ],
+      [
+        960.0,
+        850.0
+      ],
+      [
+        660.0,
+        550.0
+      ]
+    ],
+    "world_points": [
+      [
+        52.5,
+        24.85
+      ],
+      [
+        61.65,
+        34.0
+      ],
+      [
+        52.5,
+        43.15
+      ],
+      [
+        43.35,
+        34.0
+      ]
+    ],
+    "overhead_tolerance": 38,
+    "compensate_camera": true,
+    "keyframes": [],
+    "possession": "unknown",
+    "possession_segments": [],
+    "thresholds": {
+      "deviation_m": 8,
+      "unit_gap_m": 27,
+      "defensive_gap_m": 23,
+      "depth_m": 58,
+      "isolation_m": 22,
+      "persistence_s": 0.8
+    }
+  },
+  "model": {
+    "name": "overhead",
+    "classes": null,
+    "weights_sha256": null,
+    "ultralytics_version": null
+  },
+  "python": "3.10.11",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 26.01470988831381,
+    "frame_count": 955,
+    "duration_s": 36.71
+  },
+  "effective_sample_fps": 2.0011,
+  "timing_scope": "Entire processing pipeline, including decoding, registration, detection, tactics and video writing",
+  "seconds": 35.49,
+  "evidence_status": "Engineering run; no held-out tactical accuracy or coach agreement claimed"
+}

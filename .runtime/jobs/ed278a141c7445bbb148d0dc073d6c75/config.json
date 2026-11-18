@@ -1,0 +1,43 @@
+{
+  "formation": "4-3-3",
+  "direction": 1,
+  "detector": "markers",
+  "own_colour": "#e62d2d",
+  "opponent_colour": "#1e5fe6",
+  "confidence": 0.3,
+  "sample_fps": 5.0,
+  "start_s": 0.0,
+  "end_s": 6.0,
+  "corners": [
+    [
+      110.0,
+      70.0
+    ],
+    [
+      850.0,
+      105.0
+    ],
+    [
+      925.0,
+      550.0
+    ],
+    [
+      35.0,
+      550.0
+    ]
+  ],
+  "world_points": null,
+  "overhead_tolerance": 38.0,
+  "compensate_camera": true,
+  "keyframes": [],
+  "possession": "unknown",
+  "possession_segments": [],
+  "thresholds": {
+    "deviation_m": 8.0,
+    "unit_gap_m": 27,
+    "defensive_gap_m": 23,
+    "depth_m": 58,
+    "isolation_m": 22,
+    "persistence_s": 0.8
+  }
+}

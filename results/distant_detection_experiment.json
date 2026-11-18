@@ -1,0 +1,30 @@
+{
+  "evidence_type": "Unlabelled engineering probe, not accuracy validation",
+  "configuration": {
+    "model": "football-yolov8s.pt",
+    "confidence": 0.15,
+    "image_size": 1280,
+    "full_frame_plus_overlapping_crops": 5,
+    "nms_iou": 0.45
+  },
+  "counts": [
+    {
+      "time_s": 0,
+      "merged_candidates": 34
+    },
+    {
+      "time_s": 5,
+      "merged_candidates": 37
+    },
+    {
+      "time_s": 8,
+      "merged_candidates": 29
+    }
+  ],
+  "visual_inspection": "Bounding boxes also covered watermark text, field markings and stadium objects. More detections alone did not establish improved player accuracy.",
+  "decision": "Not enabled in the application on the strength of this probe. Keep the existing detector and require independent labelled comparison before accepting this change.",
+  "artifacts": [
+    "results/distant_5.jpg",
+    "results/distant_contact_sheet.jpg"
+  ]
+}

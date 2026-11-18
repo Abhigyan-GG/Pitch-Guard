@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "clip_id": "4735a464cb614c78a8113246861c1c9f",
+  "job_id": "ed278a141c7445bbb148d0dc073d6c75",
+  "input_sha256": "1f8e0264c3ceec39c75336614d3938602fa03daac03c91aad590d19422f701ac",
+  "annotation_version": "human-review-1",
+  "reviewer": "Automated UI fixture, not a human coach",
+  "reviewer_role": "analyst",
+  "annotation_context": "Human review with access to machine predictions",
+  "events_reviewed": false,
+  "reviewed_intervals": [
+    [
+      0.0,
+      6.0
+    ]
+  ],
+  "events": [
+    {
+      "kind": "unit_gap",
+      "start_s": 1.0,
+      "end_s": 1.5,
+      "notes": "Automated UI fixture \u2014 not tactical ground truth"
+    }
+  ],
+  "review_decisions": [
+    {
+      "start_s": 1.0,
+      "end_s": 1.5,
+      "id": "7df91532-97c2-4949-bbc9-d38441ec9c8e",
+      "kind": "unit_gap",
+      "judgement": "issue",
+      "notes": "Automated UI fixture \u2014 not tactical ground truth"
+    }
+  ],
+  "frames": [],
+  "scope": "Event labels only; no player positions or independent calibration labels supplied."
+}

@@ -1,7 +1,10 @@
 numpy==1.26.4
 scipy==1.15.1
-opencv-python-headless==4.11.0.86
+opencv-python==4.11.0.86
 fastapi==0.119.0
 uvicorn==0.37.0
 python-multipart==0.0.20
 ultralytics==8.3.146
+pydantic==2.11.9
+torch==2.7.0
+torchvision==0.22.0

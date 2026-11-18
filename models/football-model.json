@@ -1,0 +1,9 @@
+{
+  "repository": "AurevinP/PULSE_AI_Models",
+  "revision": "5c7b65a062557736baa036af15ca469f8a5b2847",
+  "filename": "yolov8s_player_tracker.pt",
+  "sha256": "74b71f4ab2f5f8bfafff3679a2f5a06f994fc6fe6963df500a223d80e8047c70",
+  "url": "https://huggingface.co/AurevinP/PULSE_AI_Models/resolve/5c7b65a062557736baa036af15ca469f8a5b2847/yolov8s_player_tracker.pt",
+  "model_card": "https://huggingface.co/AurevinP/PULSE_AI_Models",
+  "upstream_base": "Ultralytics YOLOv8s"
+}

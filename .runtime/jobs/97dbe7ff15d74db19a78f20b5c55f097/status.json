@@ -1,0 +1,19 @@
+{
+  "id": "97dbe7ff15d74db19a78f20b5c55f097",
+  "upload_id": "7b1ee54085414fe9bea4f04397632ddd",
+  "name": "gettyimages-1293195390-640_adpp.mp4",
+  "status": "completed",
+  "progress": 1,
+  "message": "Ready for review",
+  "created_utc": "2026-11-18T11:44:53.567662+00:00",
+  "summary": {
+    "samples": 19,
+    "formation_coverage": 0.0,
+    "local_only_coverage": 0.6842,
+    "camera_coverage": 1.0,
+    "events": 0,
+    "average_detections": 9.37,
+    "start_s": 0,
+    "end_s": 8.8
+  }
+}

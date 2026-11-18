@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "status": "unlabelled engineering smoke-test inventory; not a held-out benchmark",
+  "human_labels_verified": false,
+  "clips": [
+    {
+      "id": "user-clip-1",
+      "match_id": "user-source-1",
+      "path": "gettyimages-1293195390-640_adpp.mp4",
+      "split": "validation",
+      "permission_note": "User supplied this local video and explicitly allowed training and testing in this session. Independent dataset access and match identity have not been verified.",
+      "labels": null,
+      "events_reviewed": false
+    },
+    {
+      "id": "user-clip-2",
+      "match_id": "user-source-2",
+      "path": "Top View Of A Football Match by Vincent Film - Stock Video _ Motion Array - Opera 2026-11-18 16-31-44.mp4",
+      "split": "validation",
+      "permission_note": "User supplied this local video and explicitly allowed training and testing in this session. Independent dataset access and match identity have not been verified.",
+      "labels": null,
+      "events_reviewed": false
+    }
+  ]
+}

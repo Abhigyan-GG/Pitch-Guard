@@ -1,0 +1,19 @@
+{
+  "id": "76768e772de642b89ebdd8b445315974",
+  "upload_id": "cd8210aa945e4c90bf631e47ec9e5698",
+  "name": "Top View Of A Football Match by Vincent Film - Stock Video _ Motion Array - Opera 2026-11-18 16-31-44.mp4",
+  "status": "completed",
+  "progress": 1,
+  "message": "Ready for review",
+  "created_utc": "2026-11-18T11:47:22.158970+00:00",
+  "summary": {
+    "samples": 74,
+    "formation_coverage": 0.0,
+    "local_only_coverage": 0.5,
+    "camera_coverage": 0.5405,
+    "events": 2,
+    "average_detections": 5.32,
+    "start_s": 0,
+    "end_s": 36.71
+  }
+}

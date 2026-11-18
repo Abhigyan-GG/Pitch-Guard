@@ -20,7 +20,8 @@ from .vision import CameraRegistration, KitClassifier, PersonDetector, Tracker, 
 
 ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=ROOT/".runtime"
-MODEL=ROOT/"models"/"yolov8n.pt"
+MODEL=Path(os.environ['PITCHGUARD_MODEL']) if os.environ.get('PITCHGUARD_MODEL') else ROOT/'models'/'football-yolov8s.pt'
+if not os.environ.get('PITCHGUARD_MODEL') and not MODEL.is_file():MODEL=ROOT/'models'/'yolov8n.pt'
 
 
 def checksum(path):
@@ -60,7 +61,14 @@ def save_json(path,data):
     path=Path(path)
     temporary=path.with_suffix(path.suffix+".tmp")
     temporary.write_text(json.dumps(data,indent=2,allow_nan=False),encoding="utf-8")
-    temporary.replace(path)
+    # Windows file readers/virus scanners can briefly hold the destination.
+    for attempt in range(8):
+        try:
+            temporary.replace(path)
+            break
+        except PermissionError:
+            if attempt==7:raise
+            time.sleep(.02*(attempt+1))
 
 
 def run_analysis(video,out,config:AnalysisConfig,progress=lambda fraction,message:None,cancelled=lambda:False):
@@ -100,7 +108,7 @@ def run_analysis(video,out,config:AnalysisConfig,progress=lambda fraction,messag
             if frame.shape[:2]!=(info['height'],info['width']):raise ValueError("Video resolution changed during analysis")
             while next_key is not None and time_s>=next_key.time_s:
                 ref=read_frame(video,next_key.time_s)
-                registration=CameraRegistration(ref,next_key.corners,config.compensate_camera,next_key.world_points or config.world_points)
+                registration=CameraRegistration(ref,next_key.corners,config.compensate_camera,next_key.world_points)
                 tracker.reset();next_key=next(keyframes,None)
             H,camera=registration.update(frame)
             if H is None:
@@ -126,7 +134,7 @@ def run_analysis(video,out,config:AnalysisConfig,progress=lambda fraction,messag
             if H is None:
                 state.update(valid=False,local_valid=False,local_signals=[],signals=[],reason=camera['reason'])
             event_ids=engine.update(time_s,state)
-            timeline.append({'frame':index,'time_s':round(time_s,3),'camera':camera,
+            timeline.append({'frame':index,'time_s':round(time_s,3),'camera':camera,'image_to_pitch':H.tolist() if H is not None else None,
                              'observations':[o.record() for o in observations],'shape':state,'active_events':event_ids})
             overlay=frame.copy()
             for o in observations:
@@ -152,8 +160,11 @@ def run_analysis(video,out,config:AnalysisConfig,progress=lambda fraction,messag
     if rejected:warnings.append(f'Camera calibration was unavailable in {rejected} samples. Pitch-based analysis abstained during those samples; add calibration keyframes for those sections.')
     if not any(counts):warnings.append('No people were detected. Try overhead mode for aerial footage, a lower confidence threshold, or a clearer wide-angle clip.')
     manifest={'schema_version':1,'created_utc':__import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(),
+              'rule_version':'geometric-coaching-v1',
+              'source_checksums':{name:checksum(ROOT/'src'/name) for name in ['pipeline.py','vision.py','coaching.py','formations.py','schemas.py']},
               'input_sha256':checksum(video),'configuration':config.model_dump(),
-              'model':{'name':'YOLOv8n COCO person' if detector else config.detector,
+              'model':{'name':MODEL.name if detector else config.detector,
+                       'classes':detector.model.names if detector else None,
                        'weights_sha256':checksum(MODEL) if detector else None,
                        'ultralytics_version':importlib.metadata.version('ultralytics') if detector else None},
               'python':platform.python_version(),'opencv':cv2.__version__,'numpy':np.__version__,

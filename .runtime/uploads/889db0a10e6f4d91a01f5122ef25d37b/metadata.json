@@ -1,0 +1,14 @@
+{
+  "id": "889db0a10e6f4d91a01f5122ef25d37b",
+  "name": "gettyimages-1293195390-640_adpp.mp4",
+  "path": "C:\\Users\\Hemant\\Downloads\\PYTHON\\Pitch-Guard\\gettyimages-1293195390-640_adpp.mp4",
+  "video": {
+    "width": 768,
+    "height": 432,
+    "fps": 25.0,
+    "frame_count": 220,
+    "duration_s": 8.8
+  },
+  "example": "local-0",
+  "created_utc": "2026-11-18T11:48:01.242611+00:00"
+}
