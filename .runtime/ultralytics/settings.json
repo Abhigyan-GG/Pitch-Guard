@@ -1,0 +1,21 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "C:\\Users\\Hemant\\Downloads\\PYTHON\\Pitch-Guard\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "9d5c5647d2b05bdecf1e9cdb085a9e96bb27400759fce71d0e01be2a29f9f399",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

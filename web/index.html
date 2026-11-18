@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PitchGuard — Coaching Studio</title>
+  <meta name="description" content="Compare football systems, review match footage and build a focused next training session.">
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <aside class="sidebar">
+    <a href="#planner" class="brand" aria-label="PitchGuard home"><span class="brand-symbol">P<span>G</span></span><span>PitchGuard<small>COACHING STUDIO</small></span></a>
+    <p class="nav-label">YOUR WORKSPACE</p>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-view="planner"><span>01</span> Match preparation</button>
+      <button class="nav-item" data-view="analysis"><span>02</span> Video analysis</button>
+      <button class="nav-item" data-view="sessions"><span>03</span> Session library</button>
+    </nav>
+    <div class="sidebar-note"><span class="status-dot"></span> Local workspace<p>Your footage stays on this computer. No account needed.</p><button class="text-button light" id="help-button">How to use PitchGuard ↗</button></div>
+    <div class="sidebar-footer">SEE THE SPACE.<br>IMPROVE THE GAME.</div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><span>THE ANALYST'S WORKSPACE</span><span class="topbar-right"><span class="status-dot"></span><span id="service-state">Connecting…</span><button class="round-button" id="help-top" aria-label="Open help">?</button></span></header>
+    <main id="main">
+      <div id="notice" class="notice" role="status" hidden></div>
+      <section id="planner-view" class="view">
+        <div class="page-heading"><div><p class="eyebrow">MATCH PREPARATION</p><h1>A clearer plan.<br>A more connected team.</h1><p class="intro">Know their shape. Find your advantage. Take a plan onto the pitch.</p></div><span class="edition">TACTICAL<br>WORKBOOK / 01</span></div>
+        <div class="planner-layout">
+          <form id="advice-form" class="panel setup-panel">
+            <div class="panel-header"><span class="step">01</span><h2>Set the matchup</h2></div>
+            <label for="opponent">Expected opposition formation</label><select id="opponent" name="opponent"></select>
+            <label for="current">Your familiar formation</label><select id="current" name="current"></select>
+            <label for="objective">What does this match need?</label><select id="objective"><option value="balanced">A balanced approach</option><option value="keep_ball">Control possession</option><option value="protect_lead">Protect a lead</option><option value="chase_goal">Chase a goal</option></select>
+            <details class="squad-details"><summary>Tailor to your squad <span>+</span></summary><p class="muted small">Rate relative strengths: 1 developing, 5 strong.</p><div id="squad-ratings"></div></details>
+            <button class="primary" type="submit" id="recommend-button">Build our match plan <span>↗</span></button>
+            <p class="small muted">Your inputs shape the recommendation. There is no universally best formation.</p>
+          </form>
+          <div class="plan-output" id="plan-output" aria-live="polite"><div class="panel empty">Building your first matchup…</div></div>
+        </div>
+        <div id="opponent-details"></div>
+      </section>
+
+      <section id="analysis-view" class="view" hidden>
+        <div class="page-heading"><div><p class="eyebrow">VIDEO ANALYSIS</p><h1>Find the moment.<br>Understand the movement.</h1><p class="intro">Turn visible spacing and shape changes into a focused coaching conversation.</p></div><button class="secondary" id="demo-button">Try the six-second demo ↗</button></div>
+        <div class="analysis-layout">
+          <div class="panel video-setup">
+            <div class="panel-header"><span class="step">01</span><h2>Bring your footage</h2></div>
+            <label class="dropzone" id="dropzone" for="video-file"><span class="upload-symbol">↑</span><strong>Choose a match video</strong><span>MP4, MOV, AVI, MKV or WebM</span><input id="video-file" type="file" accept=".mp4,.mov,.avi,.mkv,.webm,.m4v"></label>
+            <progress id="upload-progress" max="100" value="0" hidden aria-label="Upload progress"></progress>
+            <label for="example-select">Or use a clip in this workspace</label><select id="example-select"><option value="">Choose a clip…</option></select><button class="secondary full" id="load-example">Load selected clip</button>
+            <div id="upload-info" class="clip-info" hidden></div>
+            <form id="analysis-form">
+              <div class="panel-header divider"><span class="step">02</span><h2>Set the context</h2></div>
+              <label for="detector">Footage type</label><select id="detector"><option value="players">Match camera · person detector</option><option value="overhead">Overhead view · kit colour detection</option><option value="markers">Synthetic markers · demonstration only</option></select>
+              <p class="small muted" id="detector-hint">Uses a pretrained person detector. Clear wide views work best.</p>
+              <div class="two-col"><div><label for="own-colour">Your shirt colour</label><div class="colour-row"><input type="color" id="own-colour" value="#e63946"><button type="button" class="tiny" id="pick-own">Pick on image</button></div></div><div><label for="opponent-colour">Their shirt colour</label><div class="colour-row"><input type="color" id="opponent-colour" value="#2764e7"><button type="button" class="tiny" id="pick-opponent">Pick on image</button></div></div></div>
+              <label for="analysis-formation">Your reference formation</label><select id="analysis-formation"></select>
+              <div class="two-col"><div><label for="direction">Your attacking direction</label><select id="direction"><option value="1">Left → right</option><option value="-1">Right → left</option></select></div><div><label for="possession">Possession context</label><select id="possession"><option value="unknown">Unknown / mixed</option><option value="in">Your team in possession</option><option value="out">Your team defending</option></select></div></div>
+              <div class="two-col"><div><label for="start-time">Start (seconds)</label><input id="start-time" type="number" min="0" step=".1" value="0"></div><div><label for="end-time">End (seconds)</label><input id="end-time" type="number" min=".1" step=".1" placeholder="End of clip"></div></div>
+              <label class="check-row"><input id="camera-moving" type="checkbox" checked> Compensate for camera movement</label>
+              <details><summary>Analysis settings</summary>
+                <label for="sample-fps">Analysis samples per second</label><select id="sample-fps"><option value="2">2 · faster review</option><option value="5" selected>5 · balanced</option><option value="10">10 · more detail</option></select>
+                <label for="detection-confidence">Person detection threshold</label><input type="number" id="detection-confidence" min=".1" max=".9" step=".05" value=".3">
+                <label for="colour-tolerance">Overhead colour tolerance</label><input type="number" id="colour-tolerance" min="15" max="75" value="38">
+                <label for="deviation">Role deviation threshold (m)</label><input type="number" id="deviation" min="3" max="30" value="8">
+                <label for="persistence">Event persistence (seconds)</label><input type="number" id="persistence" min=".2" max="5" step=".2" value=".8">
+                <label for="possession-json">Possession periods (optional JSON)</label><textarea id="possession-json" rows="3" placeholder='[{"start_s":0,"end_s":5,"possession":"in"}]'></textarea>
+                <p class="small muted">Use “in”, “out” or “unknown”. Periods must not overlap. Ball ownership is not inferred automatically.</p>
+              </details>
+              <button type="submit" class="primary full" id="analyse-button" disabled>Analyse this clip <span>↗</span></button>
+            </form>
+          </div>
+          <div class="analysis-main">
+            <div id="calibration-panel" class="panel">
+              <div class="panel-header"><span class="step">03</span><h2>Put the pitch in perspective</h2></div>
+              <div class="calibration-toolbar"><div><label for="calibration-type">Visible landmarks</label><select id="calibration-type"><option value="corners">Four full-pitch corners</option><option value="circle">Centre-circle extremes</option></select></div><button class="tiny" id="reset-points">Clear points</button><button class="tiny" id="undo-point">Undo last</button></div>
+              <p id="calibration-instruction" class="calibration-instruction">Load a clip, then mark top-left, top-right, bottom-right and bottom-left pitch corners.</p>
+              <div class="canvas-wrap"><canvas id="calibration-canvas" width="960" height="600" aria-label="Video frame. Click four landmarks in the stated order." tabindex="0"></canvas><div id="calibration-placeholder" class="canvas-placeholder"><span class="pitch-mark">＋</span><strong>Your footage starts here</strong><span>Upload a clip or try the demonstration.</span></div></div>
+              <div class="scrub-row"><label for="calibration-time">Frame time <output id="calibration-time-label">0:00</output></label><input id="calibration-time" type="range" min="0" max="1" step=".1" value="0"></div>
+              <div class="calibration-actions"><button class="secondary" id="save-keyframe">Save these landmarks at this time</button><span id="point-count" class="small muted">0 of 4 landmarks</span></div>
+              <div id="keyframe-list" class="keyframe-list"></div>
+              <details><summary>Precise landmark coordinates</summary><p class="small muted">For keyboard entry, use four [x, y] pixel pairs in the same order.</p><label for="points-json">Image landmarks</label><textarea id="points-json" rows="2" placeholder="[[110,70],[850,105],[925,550],[35,550]]"></textarea><button class="tiny" id="apply-points">Apply coordinates</button></details>
+              <p class="small muted">Centre-circle calibration assumes a regulation 9.15 m radius. Add a new keyframe after zooms or cuts. Calibration is meaningful only when landmarks are correctly identified.</p>
+            </div>
+            <div id="job-progress" class="panel job-progress" hidden aria-live="polite"><div class="flex"><h2 id="progress-title">Analysing your clip</h2><button class="tiny" id="cancel-job">Cancel</button></div><progress id="analysis-progress" max="1" value="0"></progress><p id="job-message"></p></div>
+            <div id="review-workspace" hidden>
+              <div class="section-heading"><div><p class="eyebrow">THE REVIEW ROOM</p><h2>Evidence before judgement.</h2></div><button class="secondary" id="new-analysis">Adjust & analyse again</button></div>
+              <div id="summary-stats" class="stats-grid"></div><div id="analysis-warnings"></div>
+              <div class="panel review-player"><div class="flex"><h3>Match moments</h3><span id="review-clock" class="mono">0:00</span></div><canvas id="review-canvas" width="960" height="600" aria-label="Selected match frame with team labels and track IDs"></canvas><div class="playback-controls"><button class="tiny" id="previous-frame" aria-label="Previous sample">←</button><button class="secondary" id="play-review">Play review</button><button class="tiny" id="next-frame" aria-label="Next sample">→</button><label class="sr-only" for="review-scrubber">Match review time</label><input id="review-scrubber" type="range" min="0" max="1" step="1" value="0"></div><p id="frame-status" class="small muted"></p></div>
+              <div class="two-col review-viz"><div class="panel"><div class="flex"><h3>Pitch map</h3><label class="check-row small"><input type="checkbox" id="show-lanes" checked> Static lanes</label></div><div id="review-pitch"></div><p class="small muted">Mint = your team · orange = opponent · grey = reference role. Track IDs are temporary, not shirt numbers.</p></div><div class="panel"><h3>How the shape changes</h3><div id="shape-chart"></div><p class="small muted">Width and depth in metres. Missing sections mean the view could not support team measurements.</p></div></div>
+              <div class="section-heading"><div><p class="eyebrow">NEXT SESSION STARTS HERE</p><h2>Moments to discuss</h2></div><label class="sr-only" for="event-filter">Filter review events</label><select id="event-filter"><option value="all">All observations</option><option value="unreviewed">Needs review</option><option value="confirmed">Confirmed</option><option value="dismissed">Dismissed</option><option value="uncertain">Uncertain</option></select></div>
+              <div id="event-list"></div>
+              <div class="panel exports"><h3>Take the review with you</h3><p class="muted small">Exports include measured evidence and your saved review notes.</p><div id="export-links" class="button-row"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sessions-view" class="view" hidden><div class="page-heading"><div><p class="eyebrow">SESSION LIBRARY</p><h1>Every review.<br>One place to return to.</h1><p class="intro">Reopen results, continue a coaching review or clear local records.</p></div><button class="secondary" id="refresh-sessions">Refresh sessions ↻</button></div><div id="session-list"></div></section>
+      <footer class="workspace-footer"><span>PITCHGUARD / COACHING STUDIO</span><span>Observe. Discuss. Practise. Repeat.</span></footer>
+    </main>
+  </div>
+  <dialog id="help-dialog"><button class="round-button close-dialog" aria-label="Close help">×</button><p class="eyebrow">YOUR FIRST SESSION</p><h2>From footage to a better training plan.</h2><ol class="help-steps"><li><strong>Prepare the matchup.</strong> Choose the expected opposition shape, your match objective and your squad's strengths. Compare the recommendation and its tradeoffs.</li><li><strong>Bring a clear clip.</strong> Wide footage works best. For aerial footage, use overhead mode and sample two distinct shirt colours from the frame.</li><li><strong>Calibrate the view.</strong> Mark four pitch corners or the centre-circle extremes. Use precise coordinates if you prefer keyboard entry. Save extra landmarks after camera changes.</li><li><strong>Review the evidence.</strong> Scrub through the pitch map and match frame. Select a flagged moment, then decide whether it was a flaw, an intentional movement or uncertain.</li><li><strong>Make it useful.</strong> Coaches can plan the suggested exercise. Players can use the individual cue. Save notes and export the review for the next session.</li></ol><div class="callout">A spacing warning is a prompt for discussion. Correct calibration, reliable detections and enough visible players are needed for useful measurements.</div><button class="primary close-dialog">Let's get started ↗</button></dialog>
+</body>
+</html>
